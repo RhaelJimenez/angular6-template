@@ -21,6 +21,7 @@
     "start": "ng serve --port 3000 --host 0.0.0.0",
     "clean": "rm -rf dist",
     "build": "npm run clean && npm run build:static",
+    "build:gh-pages": "npm run build && rm -rf ./docs && cp -r ./dist/browser ./docs",
     "build:client": "ng build --app browser --prod",
     "build:server": "ng build --prod --app server --output-hashing=false",
     "build:static": "npm run build:client && npm run build:server && npm run webpack:server && npm run prerender",
