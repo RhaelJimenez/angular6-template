@@ -5,10 +5,9 @@ Check out [the demo](https://bobby-brennan.github.io/angular4-template)
 
 #### Features
 * Angular Universal (prerendering)
-* Pug templates instead of HTML
+* [Pug](https://pugjs.org) templates instead of HTML
 * Bootstrap Sass
 * Font Awesome
-* JQuery
 * Angular HTML5 Router
 * Standard navbar/body layout
 
