@@ -11,6 +11,8 @@ import { HomeComponent }       from './home/home.component';
 import { NavbarComponent }       from './navbar/navbar.component';
 import {ReadmeComponent} from './readme/readme.component'
 
+import { environment } from '../environments/environment';
+
 @NgModule({
   imports: [
     BrowserModule.withServerTransition({appId: 'my-app'}),
@@ -19,7 +21,7 @@ import {ReadmeComponent} from './readme/readme.component'
     FormsModule,
   ],
   providers: [
-    {provide: APP_BASE_HREF, useValue: '/'}
+    {provide: APP_BASE_HREF, useValue: environment.baseHref || '/'}
   ],
   declarations: [
     AppComponent,
