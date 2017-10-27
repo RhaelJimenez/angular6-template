@@ -1,6 +1,8 @@
 # Angluar 4.0 Template Project
 I use this template as a starter for any new Angular projects.
 
+Check out [the demo](https://bobby-brennan.github.io/angular4-template)
+
 #### Features
 * Angular Universal (prerendering)
 * Pug templates instead of HTML
