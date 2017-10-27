@@ -5,6 +5,7 @@ import {Router} from '@angular/router';
     selector: 'home',
     template: `
       <h1>Home <i class="fa fa-home"></i></h1>
+      <readme></readme>
       `,
 })
 export class HomeComponent {

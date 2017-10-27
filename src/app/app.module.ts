@@ -9,6 +9,7 @@ import { appRoutes } from './app.routing';
 import { AppComponent }       from './app.component';
 import { HomeComponent }       from './home/home.component';
 import { NavbarComponent }       from './navbar/navbar.component';
+import {ReadmeComponent} from './readme/readme.component'
 
 @NgModule({
   imports: [
@@ -24,6 +25,7 @@ import { NavbarComponent }       from './navbar/navbar.component';
     AppComponent,
     HomeComponent,
     NavbarComponent,
+    ReadmeComponent,
   ],
   bootstrap: [ AppComponent ],
 })
