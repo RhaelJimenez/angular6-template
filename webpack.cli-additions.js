@@ -5,6 +5,11 @@ const addition_rules = `
   { test: /\.(pug|jade)$/,
     loader: 'pug-loader',
     query: { doctype: 'html', plugins: [require('pug-plugin-ng')] },
+  }, {
+    test: /\.json$/,
+    use: [{
+      loader: 'json-loader',
+    }]
   },
   {
     test: /\.js$/,
