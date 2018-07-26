@@ -12,11 +12,11 @@
     "clean": "rm -rf dist",
     "build": "npm run clean && npm run build:static",
     "build:gh-pages": "npm run build && rm -rf ./docs && cp -r ./dist/browser ./docs",
-    "build:client": "ng build --app browser --prod",
-    "build:server": "ng build --prod --app server --output-hashing=false",
+    "build:client": "ng build browser --prod",
+    "build:server": "ng run browser:server",
     "build:static": "npm run build:client && npm run build:server && npm run webpack:server && npm run prerender",
     "build:dynamic": "npm run build:client && npm run build:server && npm run webpack:server",
-    "webpack:server": "webpack --config webpack.server.config.js --progress --colors",
+    "webpack:server": "webpack --config webpack.server.config.js --progress --colors --mode development",
     "prerender": "cd dist && node prerender",
     "serve:static": "cd dist/browser && http-server",
     "serve:dynamic": "node dist/server",
@@ -66,7 +66,8 @@
     "pug-loader": "^2.4.0",
     "pug-plugin-ng": "0.0.2",
     "reflect-metadata": "^0.1.10",
-    "ts-loader": "^2.3.7",
-    "typescript": "^2.9.2"
+    "ts-loader": "^4.4.2",
+    "typescript": "^2.9.2",
+    "webpack-cli": "^3.1.0"
   }
 }
