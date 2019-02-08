@@ -1,10 +1,10 @@
 {
-  "name": "angular4-template",
+  "name": "angular6-template",
   "version": "0.0.0",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/bobby-brennan/angular4-template.git"
+    "url": "https://github.com/bobby-brennan/angular6-template.git"
   },
   "scripts": {
     "ng": "ng",
